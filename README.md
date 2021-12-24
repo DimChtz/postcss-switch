@@ -1,12 +1,83 @@
 # postcss-switch
 
-PostCSS plugin to switch code in CSS files
+PostCSS plugin to switch code in CSS files.
+
+Useful when you have shared css on your project and you need small style differences.
 
 ## Installation
 
 ```console
 $ npm install @dimchtz/postcss-switch
 ```
+
+## Usage
+
+### Example with gulp and tailwindcss
+
+```js
+// gulpfile.js
+gulp.task('buildcss', function () {
+    return gulp
+        .src('./src/main.css')
+        .pipe(
+            postcss([
+                require('postcss-import'),
+                require('@dimchtz/postcss-switch')({
+                    switch: process.env.SWITCH
+                }),
+                require('tailwindcss/nesting'),
+                require('tailwindcss'),
+                require('autoprefixer'),
+                require('cssnano')()
+            ])
+        )
+        .pipe(gulp.dest('./dist'));
+});
+```
+```css
+.my-button {
+    display: inline-block;
+    text-align: center;
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: #fff;
+
+    @switch public {
+        background-color: red;
+        font-size: 16px;
+    }
+
+    @switch admin {
+        background-color: blue;
+        font-size: 14px;
+    }
+}
+```
+When `switch` in gulpfile is `public` the result css will be:
+```css
+.my-button {
+    display: inline-block;
+    text-align: center;
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: red;
+    font-size: 16px;
+}
+```
+When `switch` in gulpfile is `admin` the result css will be:
+```css
+.my-button {
+    display: inline-block;
+    text-align: center;
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: blue;
+    font-size: 14px;
+}
+```
+How you change switch option in gulpfile is up to you.
 
 ### Options
 
@@ -15,7 +86,7 @@ $ npm install @dimchtz/postcss-switch
 Type: `String`  
 Default: `undefined`
 
-A string or an array of paths in where to look for files.
+The switch name.
 
 ## CONTRIBUTING
 

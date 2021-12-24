@@ -2,7 +2,7 @@
 
 module.exports = (opts = {}) => {
     return {
-        postcssPlugin: 'postcss-switch-code',
+        postcssPlugin: 'postcss-switch',
         AtRule: {
             switch: atRule => {
                 if ( opts.switch && atRule.params === opts.switch ) {
