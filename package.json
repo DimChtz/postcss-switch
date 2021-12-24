@@ -14,4 +14,8 @@
   ],
   "author": "Dimitris Chatzis",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DimChtz/postcss-switch"
+  }
 }
