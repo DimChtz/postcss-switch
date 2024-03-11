@@ -20,6 +20,9 @@
     "type": "git",
     "url": "git+https://github.com/DimChtz/postcss-switch.git"
   },
+  "bugs": {
+    "url": "https://github.com/DimChtz/postcss-switch/issues"
+  },
   "peerDependencies": {
     "postcss": "^8.0.0"
   },
