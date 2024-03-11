@@ -7,7 +7,7 @@ Useful when you have shared css on your project and you need small style differe
 ## Installation
 
 ```console
-$ npm install @dimchtz/postcss-switch
+$ npm install postcss-switch
 ```
 
 ## Usage
