@@ -34,3 +34,6 @@ public
 *.sublime-project
 *.sublime-workspace
 sftp-config.json
+
+# Jest
+coverage/
