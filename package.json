@@ -12,10 +12,9 @@
     "postcss-plugin",
     "switch",
     "node modules",
-    "npm",
-    "css"
+    "npm"
   ],
-  "author": "Dimitris Chatzis <dim.chatzis1993@gmail.com>",
+  "author": "Dimitris Chatzis",
   "license": "MIT",
   "repository": {
     "type": "git",
