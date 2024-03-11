@@ -1,6 +1,6 @@
-# postcss-switch
+# postcss-switch ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/dimchtz/postcss-switch/test.yml) ![NPM Version](https://img.shields.io/npm/v/postcss-switch) ![NPM License](https://img.shields.io/npm/l/postcss-switch)
 
-PostCSS plugin to switch code in CSS files.
+[PostCSS](https://github.com/postcss/postcss) plugin to switch code in CSS files.
 
 Useful when you have shared css on your project and you need small style differences.
 
