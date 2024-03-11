@@ -11,5 +11,6 @@ coverage/
 .gitattributes
 .editorconfig
 .npmrc
+.eslintrc.json
 
 index.test.js
