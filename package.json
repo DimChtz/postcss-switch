@@ -1,6 +1,6 @@
 {
   "name": "postcss-switch",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "PostCSS plugin to switch code in CSS files",
   "main": "index.js",
   "scripts": {

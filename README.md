@@ -22,7 +22,7 @@ gulp.task('buildcss', function () {
         .pipe(
             postcss([
                 require('postcss-import'),
-                require('@dimchtz/postcss-switch')({
+                require('postcss-switch')({
                     switch: process.env.SWITCH
                 }),
                 require('tailwindcss/nesting'),
