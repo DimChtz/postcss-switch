@@ -7,14 +7,14 @@ module.exports = (opts = {}) => {
             switch: atRule => {
                 if ( opts.switch && atRule.params === opts.switch ) {
                     atRule.nodes.forEach(node => {
-                        atRule.parent.insertAfter(atRule, node)
-                    })
+                        atRule.parent.insertAfter(atRule, node);
+                    });
                 }
 
-                atRule.remove()
+                atRule.remove();
             }
         }
-    }
-}
+    };
+};
 
-module.exports.postcss = true
+module.exports.postcss = true;
