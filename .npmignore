@@ -1,0 +1,14 @@
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+test/
+coverage/
+.github/
+.npmignore
+.gitignore
+.editorconfig
+.npmrc
+
+index.test.js
