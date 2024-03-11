@@ -18,7 +18,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DimChtz/postcss-switch"
+    "url": "git+https://github.com/DimChtz/postcss-switch.git"
   },
   "peerDependencies": {
     "postcss": "^8.0.0"
