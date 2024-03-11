@@ -12,5 +12,6 @@ coverage/
 .editorconfig
 .npmrc
 .eslintrc.json
+jest.config.js
 
 index.test.js
