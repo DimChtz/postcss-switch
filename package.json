@@ -1,0 +1,21 @@
+{
+  "name": "postcss-switch",
+  "version": "0.1.2",
+  "description": "PostCSS plugin to switch code in CSS files",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "css",
+    "postcss",
+    "postcss-plugin",
+    "switch",
+    "node modules",
+    "npm"
+  ],
+  "author": "Dimitris Chatzis",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DimChtz/postcss-switch"
+  }
+}
