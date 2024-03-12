@@ -1,4 +1,4 @@
-# postcss-switch
+# PostCSS Switch [<img src="https://postcss.github.io/postcss/logo.svg" alt="PostCSS" width="90" height="90" align="right">](https://github.com/postcss/postcss)
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/dimchtz/postcss-switch/test.yml) ![NPM Version](https://img.shields.io/npm/v/postcss-switch) ![NPM Downloads](https://img.shields.io/npm/dw/postcss-switch) ![NPM License](https://img.shields.io/npm/l/postcss-switch)
 
 [PostCSS](https://github.com/postcss/postcss) plugin to switch code in CSS files.
@@ -13,7 +13,7 @@ npm install postcss-switch
 
 ## Usage
 
-### Example with `gulp` and `tailwindcss`
+Example with `gulp` and `tailwindcss`
 
 ```js
 // gulpfile.js
