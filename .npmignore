@@ -12,6 +12,7 @@ coverage/
 .editorconfig
 .npmrc
 .eslintrc.json
+.releaserc.json
 jest.config.js
 
 index.test.js
