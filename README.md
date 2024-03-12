@@ -13,7 +13,7 @@ npm install postcss-switch
 
 ## Usage
 
-Example with `gulp` and `tailwindcss`
+Example with `gulp` and `tailwindcss`.
 
 ```js
 // gulpfile.js
