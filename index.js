@@ -1,20 +1,23 @@
 'use strict';
 
 module.exports = (opts = {}) => {
-    return {
-        postcssPlugin: 'postcss-switch',
-        AtRule: {
-            switch: atRule => {
-                if ( opts.switch && atRule.params === opts.switch ) {
-                    atRule.nodes.forEach(node => {
-                        atRule.parent.insertAfter(atRule, node);
-                    });
-                }
+  return {
+    postcssPlugin: 'postcss-switch',
+    AtRule: {
+      switch: atRule => {
+        if ( opts.switch && atRule.params === opts.switch ) {
+          const indent = atRule.raws.before.replace(/[\S\n]/g, '');
+          atRule.nodes.forEach(node => {
+            node.raws.before = '\n' + indent;
 
-                atRule.remove();
-            }
+            atRule.parent.append(node);
+          });
         }
-    };
+
+        atRule.remove();
+      }
+    }
+  };
 };
 
 module.exports.postcss = true;

@@ -19,10 +19,12 @@ describe('postcss-switch', () => {
         padding: 12px;
 
         @switch admin {
+          margin: 24px;
           color: #000;
         }
 
         @switch public {
+          margin: 32px;
           color: #fff;
         }
       }
@@ -31,7 +33,8 @@ describe('postcss-switch', () => {
     const output = `
       .card {
         padding: 12px;
-          color: #000
+        margin: 24px;
+        color: #000
       }
     `;
 
@@ -44,10 +47,12 @@ describe('postcss-switch', () => {
         padding: 12px;
 
         @switch admin {
+          margin: 24px;
           color: #000;
         }
 
         @switch public {
+          margin: 32px;
           color: #fff;
         }
       }
@@ -56,7 +61,8 @@ describe('postcss-switch', () => {
     const output = `
       .card {
         padding: 12px;
-          color: #fff
+        margin: 32px;
+        color: #fff
       }
     `;
 
