@@ -1,18 +1,26 @@
-name: Release
+name: Publish
 
 on:
-  workflow_run:
-    workflows: ['Tests']
-    branches: [master]
-    types:
-      - completed
-
-permissions:
-  contents: read # for checkout
+  push:
+    branches: [ master ]
 
 jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 'lts/*'
+        cache: 'npm'
+    - run: npm ci
+    - run: npm run test
+
   release:
     name: Release
+    needs: [test]
     runs-on: ubuntu-latest
     permissions:
       contents: write # to be able to publish a GitHub release
