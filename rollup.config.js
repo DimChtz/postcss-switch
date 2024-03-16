@@ -5,7 +5,7 @@ import { babel } from '@rollup/plugin-babel';
 // import * as pckg from './package.json';
 
 // const year = new Date().getFullYear();
-// const banner = `//! PostCSS Flexup v${pckg.version} Copyright (c) ${year} ${pckg.author}`;
+// const banner = `//! PostCSS Switch v${pckg.version} Copyright (c) ${year} ${pckg.author}`;
 
 const getOutputOptions = (file, format) => ({
   file,
