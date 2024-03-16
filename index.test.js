@@ -2,7 +2,7 @@ const postcss = require('postcss');
 const plugin = require('./');
 
 async function process(input, opts = {}) {
-  return await postcss([plugin(opts)]).process(input, {from: undefined});
+  return await postcss([plugin(opts)]).process(input, { from: undefined });
 }
 
 async function run(input, output, opts = {}) {
