@@ -1,6 +1,7 @@
-'use strict';
-
-module.exports = (opts = {}) => {
+/**
+ * @returns {import('postcss').Plugin}
+ */
+export default function postcssSwitch(opts = {}) {
   return {
     postcssPlugin: 'postcss-switch',
     AtRule: {
@@ -18,6 +19,6 @@ module.exports = (opts = {}) => {
       }
     }
   };
-};
+}
 
-module.exports.postcss = true;
+postcssSwitch.postcss = true;
